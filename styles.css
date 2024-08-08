@@ -2,22 +2,25 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333333;
+    /* got image from : https://www.vecteezy.com/free-vector/dark-pattern */
+    background-image: url('.\\images\\repPatt..jpg');
 }
 
 header {
     background-color: #000000;
-    color: #fff;
+    /* color: #fff; */
+    color:#ffffff;
     padding: 20px 0;
     text-align: center;
 }
 
 section {
+    
     padding: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
-    margin: 10px 0;
+    margin-left: 500px;
+    margin-right: 500px;
+    /* margin: 10px 0; */
+    background-color: #f4f4f4;
 }
 
 h1, h2, h3 {
@@ -41,3 +44,29 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+#bio {
+    display: flex; /* This places the text and image side by side */
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Ensures space between text and image */
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.bio-content {
+    flex: 2; /* Takes up more space */
+    padding-right: 20px; /* Adds space between text and image */
+}
+
+.bio-image {
+    flex: 1; /* Takes up less space */
+}
+
+.bio-image img {
+    max-width: 100%; /* Ensures the image does not overflow */
+    height: auto;
+    border-radius: 8px; /* adds a slight roundness to the corners of the image */
+}
+
