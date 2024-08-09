@@ -28,11 +28,34 @@ h1, h2, h3 {
     padding: 10px 0;
 }
 
+.project-link {
+    display: block; /* Makes the anchor tag a block-level element */
+    text-decoration: none; /* Removes the underline from the link */
+    color: inherit; /* Ensures the text color is inherited */
+}
+
 .project {
+    display: flex; /* Aligns the image and text side by side */
+    align-items: center; /* Vertically aligns the image with the text */
     background-color: #fff;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
+}
+
+.project-image {
+    height: 100px; /* Set the height to 100 pixels */
+    width: auto; /* Automatically adjust the width to maintain aspect ratio */
+    margin-right: 20px; /* Add space between the image and text */
+    border-radius: 8px; /* Optional: round the corners of the image */
+}
+
+.project-details {
+    flex: 1; /* Ensures the text takes up the remaining space */
+}
+
+.project h3, .project p, .project a {
+    margin: 5px 0;
 }
 
 footer {
