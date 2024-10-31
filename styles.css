@@ -17,7 +17,7 @@ section {
     padding: 20px;
     margin: 0 auto;
     background-color: #f4f4f4;
-    max-width: 800px; /* Limits max width to prevent it from being too wide */
+    max-width: 1000px; /* Limits max width to prevent it from being too wide */
 }
 
 h1, h2, h3 {
@@ -72,7 +72,6 @@ footer {
     background-color: #f4f4f4;
     padding: 20px;
     margin: 0 auto;
-    max-width: 800px; /* Sets max-width for bio section */
 }
 
 .bio-content {
