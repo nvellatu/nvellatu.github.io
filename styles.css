@@ -8,19 +8,16 @@ body {
 
 header {
     background-color: #000000;
-    /* color: #fff; */
-    color:#ffffff;
+    color: #ffffff;
     padding: 20px 0;
     text-align: center;
 }
 
 section {
-    
     padding: 20px;
-    margin-left: 500px;
-    margin-right: 500px;
-    /* margin: 10px 0; */
+    margin: 0 auto;
     background-color: #f4f4f4;
+    max-width: 800px; /* Limits max width to prevent it from being too wide */
 }
 
 h1, h2, h3 {
@@ -29,14 +26,14 @@ h1, h2, h3 {
 }
 
 .project-link {
-    display: block; /* Makes the anchor tag a block-level element */
-    text-decoration: none; /* Removes the underline from the link */
-    color: inherit; /* Ensures the text color is inherited */
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .project {
-    display: flex; /* Aligns the image and text side by side */
-    align-items: center; /* Vertically aligns the image with the text */
+    display: flex;
+    align-items: center;
     background-color: #fff;
     padding: 10px;
     margin: 10px 0;
@@ -44,14 +41,14 @@ h1, h2, h3 {
 }
 
 .project-image {
-    height: 100px; /* Set the height to 100 pixels */
-    width: auto; /* Automatically adjust the width to maintain aspect ratio */
-    margin-right: 20px; /* Add space between the image and text */
-    border-radius: 8px; /* Optional: round the corners of the image */
+    height: 100px;
+    width: auto;
+    margin-right: 20px;
+    border-radius: 8px;
 }
 
 .project-details {
-    flex: 1; /* Ensures the text takes up the remaining space */
+    flex: 1;
 }
 
 .project h3, .project p, .project a {
@@ -69,27 +66,55 @@ footer {
 }
 
 #bio {
-    display: flex; /* This places the text and image side by side */
-    align-items: center; /* Aligns items vertically in the center */
-    justify-content: space-between; /* Ensures space between text and image */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #f4f4f4;
     padding: 20px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin: 0 auto;
+    max-width: 800px; /* Sets max-width for bio section */
 }
 
 .bio-content {
-    flex: 2; /* Takes up more space */
-    padding-right: 20px; /* Adds space between text and image */
+    flex: 2;
+    padding-right: 20px;
 }
 
 .bio-image {
-    flex: 1; /* Takes up less space */
+    flex: 1;
 }
 
 .bio-image img {
-    max-width: 100%; /* Ensures the image does not overflow */
+    max-width: 100%;
     height: auto;
-    border-radius: 8px; /* adds a slight roundness to the corners of the image */
+    border-radius: 8px;
 }
 
+/* Media query for screens narrower than 768px (e.g., tablets and small laptops) */
+@media (max-width: 768px) {
+    section, #bio {
+        margin: 0 20px; /* Adds margin on smaller screens to avoid edge alignment */
+    }
+    .project {
+        flex-direction: column; /* Stacks the image above the text */
+        align-items: flex-start;
+    }
+    .project-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Media query for screens narrower than 480px (e.g., mobile devices) */
+@media (max-width: 480px) {
+    header, footer {
+        padding: 10px 0; /* Reduces padding on header and footer */
+    }
+    section, #bio {
+        margin: 0 10px; /* Further reduces side margins on very small screens */
+        padding: 15px;
+    }
+    .bio-content {
+        padding-right: 10px; /* Reduces padding in bio content */
+    }
+}
