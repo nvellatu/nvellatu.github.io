@@ -7,8 +7,9 @@ body {
 }
 body {
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #f0f0f0;
+
   }
 
 header {
@@ -22,7 +23,7 @@ section {
     padding: 20px;
     margin: 0 auto;
     background-color: #f4f4f4;
-    max-width: 1000px; /* Limits max width to prevent it from being too wide */
+    max-width: 1400px; /* Limits max width to prevent it from being too wide */
 }
 
 h1, h2, h3 {
