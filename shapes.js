@@ -2,6 +2,10 @@ let clicked_once = false;
 function shapes(){
     if (!clicked_once) {
         clicked_once = true;
+        //change welcome sign
+        const header = document.querySelector('h1');  // Select the <h1> element
+        header.textContent = "Try dragging them around!";
+        
         const shapes = [];
         const friction = 0.9;
 
